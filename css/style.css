@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(5, 5, 32);
+}
+.button
+{
+  background-color: rgb(34, 84, 112); 
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.button:hover{
+  background-color: #fff;
+  color :#000;
+}
+.custom-nav .custom-nav-item a {
+  color: #000 !important;
+}
+.custom-nav-item:hover {
+  background-color: rgb(34, 84, 112);
+  border: solid rgb(34, 84, 112) 1px;
+  color: #fff;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+.remove-vid-marg {
+  margin: 0px;
+  padding: 0px;
+}
+
+.vid-parent {
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.vid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+.vid-content {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 2;
+  text-align: center;
+}
+.colorchange{
+  background-color:rgb(34, 84, 112);
+  color:#fff; 
+}
+.colorchange:hover{
+  background-color:#fff; 
+  color: #000;
+}
+.bgbannercolor{
+  background-color:#fff;
+}
+.bottom-banner {
+  color: rgb(8, 8, 27);
+  padding: 10px;
+}
+
+.bottom-banner:first-child {
+  padding-left: 50px;
+}
+
+a.social:hover {
+  padding: 5px 100px;
+  text-decoration: none;
+  border:1px solid rgb(34, 84, 112);
+  color: #fff;
+}
+.crd{
+  content: '';
+  cursor: inherit;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.as{
+  color: #fff;
+  text-decoration: none;
+}
+.as:hover{
+  color: white;
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .my-content,
+  .txt-banner,
+   /* hide it on small screens */
+
+  .vid-content {
+    top: 12%;
+    left: 60%;
+  }
+  .custom-nav .custom-nav-item a {
+    padding: 10px 20px;
+    background-color: rgb(34, 84, 112);
+  }
+
+  .custom-nav-item:hover {
+    background-color: none;
+    border: none;
+    border-radius: none;
+  }
+}
